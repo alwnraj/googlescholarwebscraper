@@ -1,42 +1,56 @@
-name: Scrape and Update Data
+name: Scrape and Deploy
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
   workflow_dispatch: # Allows manual triggering
 
+# Sets permissions for the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  scrape:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install puppeteer
 
+      # Step 4: Run the scraping script
       - name: Run scraping script
         run: node scrape.js
 
+      # Step 5: Commit and push changes (if any)
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add data.json
-          git commit -m "Automated update: Scraped latest data"
-          git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+          git commit -m "Automated update: Scraped latest data" || echo "No changes to commit"
+          git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git || echo "Nothing to push"
 
-      - name: Trigger GitHub Pages deployment
-        uses: actions/github-script@v6
+      # Step 6: Set up GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Step 7: Upload the entire repository as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'static.yml',
-              ref: 'main',
-            });
+          path: '.'
+
+      # Step 8: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
