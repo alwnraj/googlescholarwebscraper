@@ -1,4 +1,4 @@
-name: Scrape Scholar
+name: Scrape and Update GitHub Pages
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
@@ -21,11 +21,11 @@ jobs:
 
       - name: Run scraping script
         run: node scrape.js
-
+        
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add data.json
-          git commit -m "Update scraped data"
-          git push
+          git commit -m "Automated update: Scraped latest data"
+          git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
