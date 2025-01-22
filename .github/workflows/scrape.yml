@@ -1,4 +1,4 @@
-name: Scrape and Update GitHub Pages
+name: Scrape and Update Data
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -21,7 +21,7 @@ jobs:
 
       - name: Run scraping script
         run: node scrape.js
-        
+
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
@@ -29,3 +29,14 @@ jobs:
           git add data.json
           git commit -m "Automated update: Scraped latest data"
           git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Trigger GitHub Pages deployment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'static.yml',
+              ref: 'main',
+            });
