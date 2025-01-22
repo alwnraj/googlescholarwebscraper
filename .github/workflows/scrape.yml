@@ -1,10 +1,10 @@
 name: Scrape and Deploy1
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '0 0 * * *' # Runs every day at midnight (00:00)
   workflow_dispatch: # Allows manual triggering
 
-# Sets permissions for the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions for the GITHUB_TOKEN to allow deployment to github pages
 permissions:
   contents: write
   pages: write
