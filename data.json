@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "title": "FlyNetSim: An open source synchronized UAV network simulator based on ns-3 and ardupilot",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:qjMakFHDy7sC",
+    "year": "2018",
+    "citations": "118"
+  },
+  {
+    "title": "Distilled split deep neural networks for edge-assisted real-time systems",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:Tyk-4Ss8FVUC",
+    "year": "2019",
+    "citations": "107"
+  },
+  {
+    "title": "Head network distillation: Splitting distilled deep neural networks for resource-constrained edge computing systems",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:UeHWp8X0CEIC",
+    "year": "2020",
+    "citations": "74"
+  },
+  {
+    "title": "Vehicular and edge computing for emerging connected and autonomous vehicle applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:W7OEmFMy1HYC",
+    "year": "2020",
+    "citations": "54"
+  },
+  {
+    "title": "Improving the performance of multipath TCP over heterogeneous paths using slow path adaptation",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:0EnyYjriUFMC",
+    "year": "2014",
+    "citations": "45"
+  },
+  {
+    "title": "Adaptive computation partitioning and offloading in real-time sustainable vehicular edge computing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:9yKSN-GCB0IC",
+    "year": "2021",
+    "citations": "44"
+  },
+  {
+    "title": "Tackling cold start of serverless applications by efficient and adaptive container runtime reusing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:u-x6o8ySG0sC",
+    "year": "2021",
+    "citations": "32"
+  },
+  {
+    "title": "State of energy prediction in renewable energy-driven mobile edge computing using CNN-LSTM networks",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:roLk4NBRz8UC",
+    "year": "2020",
+    "citations": "25"
+  },
+  {
+    "title": "eBPF-based content and computation-aware communication for real-time edge computing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:Se3iqnhoufwC",
+    "year": "2018",
+    "citations": "23"
+  },
+  {
+    "title": "Urban iot edge analytics",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:MXK_kJrjxJIC",
+    "year": "2018",
+    "citations": "23"
+  },
+  {
+    "title": "Robust multi-path communications for UAVs in the urban IoT",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:Y0pCki6q_DkC",
+    "year": "2018",
+    "citations": "22"
+  },
+  {
+    "title": "A measurement study on edge computing for autonomous UAVs",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:2osOgNQ5qMEC",
+    "year": "2019",
+    "citations": "19"
+  },
+  {
+    "title": "Dynamic distributed computing for infrastructure-assisted autonomous UAVs",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:eQOLeE2rZwMC",
+    "year": "2020",
+    "citations": "14"
+  },
+  {
+    "title": "Digital Twin in Safety-Critical Robotics Applications: Opportunities and Challenges",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:_kc_bZDykSQC",
+    "year": "2022",
+    "citations": "12"
+  },
+  {
+    "title": "Content-aware cognitive interference control for urban IoT systems",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:8k81kl-MbHgC",
+    "year": "2018",
+    "citations": "11"
+  },
+  {
+    "title": "Edge-assisted content and computation-driven dynamic network selection for real-time services in the urban IoT",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:hqOjcs7Dif8C",
+    "year": "2017",
+    "citations": "11"
+  },
+  {
+    "title": "Content-based cognitive interference control for city monitoring applications in the urban IoT",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:3fE2CSJIrl8C",
+    "year": "2016",
+    "citations": "11"
+  },
+  {
+    "title": "Content-based interference management for video transmission in D2D communications underlaying LTE",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:ufrVoPGSRksC",
+    "year": "2017",
+    "citations": "9"
+  },
+  {
+    "title": "Neuro-Adaptive Dynamic Control with Edge-Computing for Collaborative Digital Twin of an Industrial Robotic Manipulator",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:4DMP91E08xMC",
+    "year": "2023",
+    "citations": "7"
+  },
+  {
+    "title": "Contention grading and adaptive model selection for machine vision in embedded systems",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UY1UAKUAAAAJ&citation_for_view=UY1UAKUAAAAJ:d1gkVwhDpl0C",
+    "year": "2022",
+    "citations": "7"
+  }
+]
