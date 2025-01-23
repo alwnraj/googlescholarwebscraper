@@ -11,6 +11,14 @@ async function scrapScholar() {
     const page = await browser.newPage();
     await page.goto('https://scholar.google.com/citations?user=UY1UAKUAAAAJ&hl=en');
 
+    // Click the "Show more" button once
+    const showMoreButton = await page.$('span.gs_lbl'); // Target the <span> element
+    if (showMoreButton) {
+      await showMoreButton.click();
+      await page.waitForSelector('tr.gsc_a_tr', { timeout: 5000 }); // Wait for new articles to load
+    }
+
+    // Scrape the data after clicking "Show more" once
     const papers = await page.evaluate(() => {
       return Array.from(document.querySelectorAll('tr.gsc_a_tr')).map(row => ({
         title: row.querySelector('.gsc_a_at')?.innerText,
